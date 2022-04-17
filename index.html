@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href=".//assets/css/style.css">
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Vue.jsの練習用デモサイト</title>
+    <meta name="description" content="Vue.jsの練習のために作成したデモサイトです。">
+    <!-- Vue.jsの読み込み -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="site">
+                <figure class="site__logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </figure>
+                <div>
+                    <p class="site__title">デモサイト</p>
+                    <p class="site__desc">Vueの練習用サイトです</p>
+                </div>
+            </h1>
+            <nav class="gnavi">
+                <ul class="menu-items">
+                    <li class="menu-item"><a href="">メニュー１</a></li>
+                    <li class="menu-item"><a href="">メニュー２</a></li>
+                    <li class="menu-item"><a class="roundedBtn" href="">ボタン</a></li>
+                </ul>
+            </nav> 
+
+            <!-- ハンバーガーメニュー -->
+            <button class="nav-button js-nav-open" onClick="navFunc()"></button>
+            <!-- ハンバーガーメニュー -->
+        </div>
+    </header>
+    <!-- 以下ちょい端折り... -->
+
+<div class="hero">
+    <div class="catch">
+        <p class="main-text">Vue Demo Site</p>
+        <p class="sub-text">Vueの練習用デモサイトです。</p>
+    </div>
+</div>
+
+<!-- content -->
+<div id="content">
+        <section class="lead">
+            <div class="container">
+                <h2 class="section-title">Vue.jsでサイトをリッチに。</h2>
+                <p>Vue.jsの練習のために作成したデモサイトです。<br>
+                    Vue.jsでさまざまな機能を追加するために、シンプルな構成のサイトにしました。<br>
+                    Vue.jsを使用してサイトをリッチにしていくことを目指しています。
+                </p>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+               <h2 class="section-title">サービス</h2>
+               <p class="section-subTitle">私達にできること</p>
+               <div class="cards">
+                   
+                    
+                        <article class="card">
+                            <figure class="card__img BUTTON">
+                                <img src="./assets/img/vue-logo.png" alt="">
+                            </figure>
+                            <div class="card__body">
+                                <h3 class="card-title">サービス１</h3>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <a href="./" class="roundedBtn card__btn">BUTTON</a>
+                            </div>
+                        </article>
+                    
+                        <article class="card">
+                            <figure class="card__img BUTTON">
+                                <img src="./assets/img/vue-logo.png" alt="">
+                            </figure>
+                            <div class="card__body">
+                                <h3 class="card-title">サービス２</h3>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <a href="./" class="roundedBtn card__btn">BUTTON</a>
+                            </div>
+                        </article>
+                    
+                        <article class="card">
+                            <figure class="card__img BUTTON">
+                                <img src="./assets/img/vue-logo.png" alt="">
+                            </figure>
+                            <div class="card__body">
+                                <h3 class="card-title">サービス３</h3>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <a href="./" class="roundedBtn card__btn">BUTTON</a>
+                            </div>
+                        </article>
+                    
+               </div>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <div class="container">
+                <div class="contact-form">
+                    <div class="form-desc">
+                        <h2 class="title">お問い合わせ</h2>
+                        <p>お問い合わせフォームです。<br>
+                            このフォームは見た目だけなので、<br>
+                            現時点では、実際にフォームに入力しても動作しません。<br>
+                            あしからず。</p>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <p class="form-group"><input type="text" placeholder="名前"></p>
+                            <p class="form-group"><input type="mail" placeholder="メールアドレス"></p>
+                            <p class="form-group"><textarea name="" id="" cols="30" rows="10" placeholder="メッセージを入力してください"></textarea></p>
+                            <p class="form-group"><button class="roundedBtn bg-orange" type="submit">送信</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+</div><!-- /content -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="site">
+            <figure class="site__logo">
+                <img src="./assets/img/logo.png" alt="">
+            </figure>
+            <div>
+                <p class="site__title">デモサイト</p>
+                <p class="site__desc">〒901-3125<br>沖縄県島尻郡久米島町字鳥島グスク<br>090-1234-5678</p>
+            </div>
+        </div>
+        <ul class="sns">
+            <li class="sns-item twitter"><a href=""><img src="./assets/img/logo-twitter.svg"></a></li>
+            <li class="sns-item facebook"><a href=""><img src="./assets/img/logo-facebook.svg"></a></li>
+            <li class="sns-item instagram"><a href=""><img src="./assets/img/logo-instagram.svg"></a></li>
+        </ul>
+    </div>
+</footer>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="./assets/js/scripts.js"></script>
+</body>
+</html>
