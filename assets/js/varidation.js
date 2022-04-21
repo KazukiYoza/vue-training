@@ -14,7 +14,7 @@ Vue.createApp({
         }
     },
     methods: {
-        validator(type, max) {
+        validator(type, max = 1000) {
             // エラーメッセージを初期化
             let name_error_message = [];
             let mail_error_message = [];
@@ -28,6 +28,7 @@ Vue.createApp({
                 contents: '内容'
             };
             console.log(type_ja[type]);
+            console.log(max);
             // メッセージを配列に格納
             let message = [
                 max + '文字以内で入力してください。',
