@@ -118,23 +118,23 @@
                             <fieldset>
                                 <div class="form-group">
                                     <label for="name">お名前</label><span class="badge require">必須</span>
-                                    <input type="text" name="name" id="name" v-model="name" v-on:blur="validator('name', 10)" placeholder="お名前を入力してください">
+                                    <input type="text" name="name" id="name" v-model="name" v-on:blur="validator('name', 100)" placeholder="お名前を入力してください">
                                     <p class="errors" v-for="error in errors.name">{{error}}</p>
                                 </div>
                                 <div class="form-group">
                                     <label for="mail">メールアドレス</label><span class="badge require">必須</span>
-                                    <input type="text" name="mail" id="mail" v-model="mail" v-on:blur="validator('mail', 10)" placeholder="メールアドレスを入力してください">
+                                    <input type="text" name="mail" id="mail" v-model="mail" v-on:blur="validator('mail')" placeholder="メールアドレスを入力してください">
                                     <p class="errors" v-for="error in errors.mail">{{error}}</p>
                                 </div>
                                 <div class="form-group">
                                     <label for="subject">件名</label><span class="badge require">必須</span>
-                                    <input type="text" name="subject" id="subject" v-model="subject" v-on:blur="validator('subject', 20)" placeholder="件名を入力してください">
+                                    <input type="text" name="subject" id="subject" v-model="subject" v-on:blur="validator('subject', 30)" placeholder="件名を30文字以内で入力してください">
                                     <p class="errors" v-for="error in errors.subject">{{error}}</p>
                                 </div>
                                 <div class="form-group">
                                     <label for="contents">メッセージ</label><span class="badge require">必須</span>
                                     <div class="form-row">
-                                        <textarea cols="30" rows="10" type="text" name="contents" id="contents" v-model="contents" v-on:blur="validator('contents', 30)" placeholder="メッセージを入力してください"></textarea>
+                                        <textarea cols="30" rows="10" type="text" name="contents" id="contents" v-model="contents" v-on:blur="validator('contents')" placeholder="メッセージは1000文字以内で入力してください"></textarea>
                                         <p class="errors" v-for="error in errors.contents">{{error}}</p>
                                     </div>
                                 </div>
