@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
     <link rel="stylesheet" href=".//assets/css/style.css">
-    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Vue.jsの練習用デモサイト</title>
     <meta name="description" content="Vue.jsの練習のために作成したデモサイトです。">
     <!-- Vue.jsの読み込み -->
@@ -32,7 +32,7 @@
                     <li class="menu-item"><a href="">メニュー２</a></li>
                     <li class="menu-item"><a class="roundedBtn" href="">ボタン</a></li>
                 </ul>
-            </nav> 
+            </nav>
 
             <!-- ハンバーガーメニュー -->
             <button class="nav-button js-nav-open" onClick="navFunc()"></button>
@@ -41,15 +41,15 @@
     </header>
     <!-- 以下ちょい端折り... -->
 
-<div class="hero">
-    <div class="catch">
-        <p class="main-text">Vue Demo Site</p>
-        <p class="sub-text">Vueの練習用デモサイトです。</p>
+    <div class="hero">
+        <div class="catch">
+            <p class="main-text">Vue Demo Site</p>
+            <p class="sub-text">Vueの練習用デモサイトです。</p>
+        </div>
     </div>
-</div>
 
-<!-- content -->
-<div id="content">
+    <!-- content -->
+    <div id="content">
         <section class="lead">
             <div class="container">
                 <h2 class="section-title">Vue.jsでサイトをリッチに。</h2>
@@ -61,48 +61,48 @@
         </section>
         <section class="service">
             <div class="container">
-               <h2 class="section-title">サービス</h2>
-               <p class="section-subTitle">私達にできること</p>
-               <div class="cards">
-                   
-                    
-                        <article class="card">
-                            <figure class="card__img BUTTON">
-                                <img src="./assets/img/vue-logo.png" alt="">
-                            </figure>
-                            <div class="card__body">
-                                <h3 class="card-title">サービス１</h3>
-                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <a href="./" class="roundedBtn card__btn">BUTTON</a>
-                            </div>
-                        </article>
-                    
-                        <article class="card">
-                            <figure class="card__img BUTTON">
-                                <img src="./assets/img/vue-logo.png" alt="">
-                            </figure>
-                            <div class="card__body">
-                                <h3 class="card-title">サービス２</h3>
-                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <a href="./" class="roundedBtn card__btn">BUTTON</a>
-                            </div>
-                        </article>
-                    
-                        <article class="card">
-                            <figure class="card__img BUTTON">
-                                <img src="./assets/img/vue-logo.png" alt="">
-                            </figure>
-                            <div class="card__body">
-                                <h3 class="card-title">サービス３</h3>
-                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <a href="./" class="roundedBtn card__btn">BUTTON</a>
-                            </div>
-                        </article>
-                    
-               </div>
+                <h2 class="section-title">サービス</h2>
+                <p class="section-subTitle">私達にできること</p>
+                <div class="cards">
+
+
+                    <article class="card">
+                        <figure class="card__img BUTTON">
+                            <img src="./assets/img/vue-logo.png" alt="">
+                        </figure>
+                        <div class="card__body">
+                            <h3 class="card-title">サービス１</h3>
+                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <a href="./" class="roundedBtn card__btn">BUTTON</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card__img BUTTON">
+                            <img src="./assets/img/vue-logo.png" alt="">
+                        </figure>
+                        <div class="card__body">
+                            <h3 class="card-title">サービス２</h3>
+                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <a href="./" class="roundedBtn card__btn">BUTTON</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card__img BUTTON">
+                            <img src="./assets/img/vue-logo.png" alt="">
+                        </figure>
+                        <div class="card__body">
+                            <h3 class="card-title">サービス３</h3>
+                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <a href="./" class="roundedBtn card__btn">BUTTON</a>
+                        </div>
+                    </article>
+
+                </div>
             </div>
         </section>
-        
+
         <section class="contact">
             <div class="container">
                 <div class="contact-form">
@@ -113,40 +113,65 @@
                             現時点では、実際にフォームに入力しても動作しません。<br>
                             あしからず。</p>
                     </div>
-                    <div class="form">
+                    <div class="form" id="app">
                         <form action="">
-                            <p class="form-group"><input type="text" placeholder="名前"></p>
-                            <p class="form-group"><input type="mail" placeholder="メールアドレス"></p>
-                            <p class="form-group"><textarea name="" id="" cols="30" rows="10" placeholder="メッセージを入力してください"></textarea></p>
-                            <p class="form-group"><button class="roundedBtn bg-orange" type="submit">送信</button></p>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="name">お名前</label><span class="badge require">必須</span>
+                                    <input type="text" name="name" id="name" v-model="name" v-on:blur="validator('name', 10)" placeholder="お名前を入力してください">
+                                    <p class="errors" v-for="error in errors.name">{{error}}</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mail">メールアドレス</label><span class="badge require">必須</span>
+                                    <input type="text" name="mail" id="mail" v-model="mail" v-on:blur="validator('mail', 10)" placeholder="メールアドレスを入力してください">
+                                    <p class="errors" v-for="error in errors.mail">{{error}}</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">件名</label><span class="badge require">必須</span>
+                                    <input type="text" name="subject" id="subject" v-model="subject" v-on:blur="validator('subject', 20)" placeholder="件名を入力してください">
+                                    <p class="errors" v-for="error in errors.subject">{{error}}</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contents">メッセージ</label><span class="badge require">必須</span>
+                                    <div class="form-row">
+                                        <textarea cols="30" rows="10" type="text" name="contents" id="contents" v-model="contents" v-on:blur="validator('contents', 30)" placeholder="メッセージを入力してください"></textarea>
+                                        <p class="errors" v-for="error in errors.contents">{{error}}</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    <input class="roundedBtn bg-orange" type="submit" value="送信する">
+                                </p>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
             </div>
 
         </section>
-</div><!-- /content -->
+    </div><!-- /content -->
 
-<footer class="footer">
-    <div class="container">
-        <div class="site">
-            <figure class="site__logo">
-                <img src="./assets/img/logo.png" alt="">
-            </figure>
-            <div>
-                <p class="site__title">デモサイト</p>
-                <p class="site__desc">〒901-3125<br>沖縄県島尻郡久米島町字鳥島グスク<br>090-1234-5678</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="site">
+                <figure class="site__logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </figure>
+                <div>
+                    <p class="site__title">デモサイト</p>
+                    <p class="site__desc">〒901-3125<br>沖縄県島尻郡久米島町字鳥島グスク<br>090-1234-5678</p>
+                </div>
             </div>
+            <ul class="sns">
+                <li class="sns-item twitter"><a href=""><img src="./assets/img/logo-twitter.svg"></a></li>
+                <li class="sns-item facebook"><a href=""><img src="./assets/img/logo-facebook.svg"></a></li>
+                <li class="sns-item instagram"><a href=""><img src="./assets/img/logo-instagram.svg"></a></li>
+            </ul>
         </div>
-        <ul class="sns">
-            <li class="sns-item twitter"><a href=""><img src="./assets/img/logo-twitter.svg"></a></li>
-            <li class="sns-item facebook"><a href=""><img src="./assets/img/logo-facebook.svg"></a></li>
-            <li class="sns-item instagram"><a href=""><img src="./assets/img/logo-instagram.svg"></a></li>
-        </ul>
-    </div>
-</footer>
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="./assets/js/scripts.js"></script>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/varidation.js"></script>
 </body>
+
 </html>
