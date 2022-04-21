@@ -264,7 +264,7 @@ button,
  * */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
-  border: 1px solid #a0a0a0;
+  /* border: 1px solid #a0a0a0; */
 }
 
 /**
@@ -1541,6 +1541,7 @@ body {
   padding: 5.625rem;
   background-color: #f8f2ee;
 }
+
 @media (max-width: 992px) {
   .contact-form {
     padding: 5.625rem 2.8125rem;
@@ -1555,14 +1556,36 @@ body {
     padding: 5.625rem 1.875rem;
   }
 }
-.contact-form div {
-  width: 50%;
-  margin-bottom: 1.25rem;
+.contact-form .form-desc{
+  width: 45%;
 }
+.contact-form .form {
+  width: 55%;
+}
+.form-group{
+  margin-bottom: 0.7rem;
+}
+
+.form-group label{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-group .badge{
+  padding: 0.3rem 0.7rem;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 @media (max-width: 750px) {
-  .contact-form div {
+  .contact-form .form-desc,
+  .contact-form .form {
     width: 100%;
   }
+
 }
 .contact-form .title {
   margin-bottom: 1.875rem;
@@ -1599,10 +1622,16 @@ body {
 
 .form-group input, .form-group textarea {
   width: 100%;
-  margin-bottom: 1.0625rem;
+  margin-top: 0.625rem;
+  /* margin-bottom: 1.0625rem; */
   padding: 10px;
   border: 1px solid #CDD6DD;
   background-color: #fff;
+}
+
+.errors{
+  font-size: 0.9rem;
+  color: #ff0000;
 }
 
 /* 各ページ固有のスタイル */
